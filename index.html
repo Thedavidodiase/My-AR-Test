@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AR View</title>
+    <!-- This script makes the AR viewer work -->
+    <script type="module" src="ajax.googleapis.com"></script>
+</head>
+<body style="margin: 0;">
+
+    <model-viewer 
+        src="10.9.2025-compressed.glb" 
+        ios-src="10.9.2025.usdz" 
+        ar 
+        ar-modes="scene-viewer quick-look webxr" 
+        camera-controls 
+        style="width: 100%; height: 100vh;">
+        
+        <button slot="ar-button" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 15px; background: #007AFF; color: white; border: none; border-radius: 10px;">
+            👋 VIEW IN YOUR CAMERA
+        </button>
+    </model-viewer>
+
+</body>
+</html>
